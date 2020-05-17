@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline Example</title>
+    <style>
+      .box {
+        background-color: #76c4c6;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .innerbox {
+        background-color: #76c4c6;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        /* transition: all 0.1s ease-in-out; */
+        animation: 0.9s ratateDots infinite ease-in-out;
+      }
+      @keyframes ratateDots {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(0.5turn);
+        }
+        100% {
+          transform: rotate(0.5turn);
+        }
+      }
+
+      .btn {
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+      }
+
+      .box2 {
+        background-color: #1eac9c;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bar {
+        background-color: white;
+        width: 12px;
+        height: 40px;
+        border: 3px solid #1eac9c;
+      }
+      #bar1 {
+        animation: 2s changebar infinite ease-in-out 0.1s;
+      }
+      #bar2 {
+        animation: 2s changebar infinite ease-in-out 0.2s;
+      }
+      #bar3 {
+        animation: 2s changebar infinite ease-in-out 0.3s;
+      }
+      #bar4 {
+        animation: 2s changebar infinite ease-in-out 0.4s;
+      }
+      #bar5 {
+        animation: 2s changebar infinite ease-in-out 0.5s;
+      }
+
+      @keyframes changebar {
+        0% {
+          transform: none;
+        }
+        10% {
+          height: 100px;
+        }
+        20% {
+          height: 40px;
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">
+      <div class="innerbox">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </span>
+    <br />
+    <span class="box2">
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
+      <div class="bar" id="bar4"></div>
+      <div class="bar" id="bar5"></div>
+    </span>
+  </body>
+</html>

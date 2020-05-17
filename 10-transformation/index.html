@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kokoa Tribe</title>
+    <meta charset="UTF-8" />
+    <title>Transitions</title>
+    <style>
+      .box {
+        background-color: green;
+        color: white;
+      }
+      .box:hover {
+        background-color: red;
+      }
+
+      .father {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .btn {
+        background-color: #7f8c8d;
+        width: 250px;
+        height: 70px;
+        color: white;
+        font-size: 25px;
+        border: 0;
+        outline: 0;
+        border-radius: 35px;
+        box-shadow: black;
+        transition: all 0.5s ease-in-out;
+      }
+      .btn:hover {
+        background-color: #95a5a6;
+        box-shadow: 5px 5px 5px #b7baba;
+      }
+
+      .niners {
+        width: 200px;
+        height: 200px;
+        transition: all 0.5s ease-in-out;
+      }
+      .niners:hover {
+        transform: rotate(0.375turn) scale(0.6, 0.6);
+        border: 8px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="father">
+      <button class="btn">I'm a button</button>
+      <img
+        class="niners"
+        src="https://pbs.twimg.com/profile_images/1258089726315094016/Q32jJc0h_400x400.jpg"
+      />
+    </div>
+  </body>
+</html>
